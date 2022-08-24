@@ -28,4 +28,4 @@ spring:
         - id: business-microservice04-location
           uri: lb://business-microservice04-location
           predicates:
-            - Path=/api/location/**  
+            - Path=/api/business-microservice04-location/location/**  
