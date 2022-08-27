@@ -29,3 +29,7 @@ spring:
           uri: lb://business-microservice04-location
           predicates:
             - Path=/api/business-microservice04-location/**  
+        - id: business-microservice05-card
+          uri: lb://business-microservice05-card
+          predicates:
+            - Path=/api/business-microservice05-card/**             
