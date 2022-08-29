@@ -32,4 +32,12 @@ spring:
         - id: business-microservice05-card
           uri: lb://business-microservice05-card
           predicates:
-            - Path=/api/business-microservice05-card/**             
+            - Path=/api/business-microservice05-card/**
+        - id: business-microservice06-card
+          uri: lb://business-microservice06-card
+          predicates:
+            - Path=/api/business-microservice06-card/**
+        - id: business-microservice07-purse
+          uri: lb://business-microservice07-purse
+          predicates:
+            - Path=/api/business-microservice07-purse/**              
