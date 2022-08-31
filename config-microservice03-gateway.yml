@@ -13,6 +13,10 @@ spring:
         locator:
           enabled: true
       routes:
+        - id: business-microservice00-master
+          uri: lb://business-microservice00-master
+          predicates:
+            - Path=/api/business-microservice00-master/**      
         - id: business-microservice01-customer
           uri: lb://business-microservice01-customer
           predicates:
@@ -29,15 +33,19 @@ spring:
           uri: lb://business-microservice04-location
           predicates:
             - Path=/api/business-microservice04-location/**  
-        - id: business-microservice05-card
-          uri: lb://business-microservice05-card
+        - id: business-microservice0501-card
+          uri: lb://business-microservice0501-card
           predicates:
-            - Path=/api/business-microservice05-card/**
-        - id: business-microservice06-card
-          uri: lb://business-microservice06-card
+            - Path=/api/business-microservice0501-card/**
+        - id: business-microservice0502-card
+          uri: lb://business-microservice0502-card
           predicates:
-            - Path=/api/business-microservice06-card/**
-        - id: business-microservice07-purse
-          uri: lb://business-microservice07-purse
+            - Path=/api/business-microservice0502-card/**
+        - id: business-microservice06-purse
+          uri: lb://business-microservice06-purse
           predicates:
-            - Path=/api/business-microservice07-purse/**              
+            - Path=/api/business-microservice06-purse/**  
+        - id: business-microservice07-bootcoin
+          uri: lb://business-microservice07-bootcoin
+          predicates:
+            - Path=/api/business-microservice07-bootcoin/**            
